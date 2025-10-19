@@ -1,0 +1,98 @@
+/*
+  EduKita-LMS Theme
+  Author: EduKita Team
+  Description: Modern, clean, responsive LMS template for ThemeForest
+*/
+:root{
+  --ek-primary:#2B7A78;
+  --ek-primary-600:#256c6a;
+  --ek-primary-700:#1f5c5a;
+  --ek-pale:#DEF2F1;
+  --ek-accent:#FF8C42;
+  --ek-dark:#0B1B1A;
+  --ek-muted:#6c757d;
+  --ek-light:#f8f9fa;
+}
+
+html{scroll-behavior:smooth}
+body{
+  font-family:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;
+  color:#1b1f23;
+  line-height:1.6;
+}
+
+h1,h2,h3,h4,h5,h6{font-family:'Poppins',system-ui,Arial,sans-serif}
+
+/* Links & Buttons */
+.a-reset{text-decoration:none;color:inherit}
+.btn-ek{background:var(--ek-primary);color:#fff;border:none}
+.btn-ek:hover{background:var(--ek-primary-600);color:#fff}
+.btn-accent{background:var(--ek-accent);color:#fff;border:none}
+.btn-accent:hover{filter:brightness(.95);color:#fff}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.75);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1);color:#fff}
+
+/* Navbar */
+.navbar{box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.navbar-brand img{height:36px;width:auto}
+.navbar .nav-link{font-weight:600}
+.navbar .nav-link.active{color:var(--ek-primary)!important}
+
+/* Hero */
+.hero{
+  background:linear-gradient(135deg, rgba(43,122,120,.95), rgba(43,122,120,.75)), url('../images/hero.jpg') center/cover no-repeat;
+  color:#fff;
+}
+.hero .lead{color:#eaf7f6}
+.hero .stats{gap:1.5rem}
+.hero .stat{backdrop-filter:blur(6px);background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);border-radius:.75rem;padding:.75rem 1rem}
+
+/* Section helpers */
+.section-title{font-weight:800}
+.section-subtitle{color:var(--ek-muted)}
+.section-pad{padding:4rem 0}
+
+/* Cards */
+.course-card{transition:transform .2s ease, box-shadow .2s ease;border:none}
+.course-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.course-card .badge{background:var(--ek-pale);color:var(--ek-primary);font-weight:700}
+.course-card .price{color:var(--ek-accent);font-weight:800}
+
+/* Badges */
+.badge-level{background:#e9f7f6;color:var(--ek-primary);font-weight:700}
+
+/* Footer */
+.footer{background:#0b1b1a;color:#cfe8e7}
+.footer a{color:#cfe8e7}
+.footer a:hover{color:#fff}
+
+/* Utilities */
+.bg-pale{background:var(--ek-pale)}
+.text-primary-ek{color:var(--ek-primary)!important}
+.bg-primary-ek{background:var(--ek-primary)!important}
+.border-primary-ek{border-color:var(--ek-primary)!important}
+
+/* Progress */
+.progress{height:.6rem;background:#e9f7f6}
+.progress-bar{background:var(--ek-primary)}
+
+/* Forms */
+.form-control:focus{border-color:var(--ek-primary);box-shadow:0 0 0 .25rem rgba(43,122,120,.15)}
+.form-check-input:checked{background-color:var(--ek-primary);border-color:var(--ek-primary)}
+
+/* Dashboard */
+.sidebar{
+  min-height:100vh;
+  border-right:1px solid #e9ecef;
+  position:sticky;top:0
+}
+.sidebar .nav-link{color:#325e5d;font-weight:600}
+.sidebar .nav-link.active{background:var(--ek-pale);color:var(--ek-primary)}
+
+/* Animations (AOS overrides) */
+[data-aos]{transition-property:transform,opacity}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px){
+  .hero{padding:4rem 0}
+}

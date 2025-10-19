@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Jelajahi kursus di EduKita-LMS — lengkap dengan filter kategori & level." />
+  <meta name="keywords" content="kursus, daftar kursus, LMS Indonesia" />
+  <meta property="og:title" content="Kursus — EduKita-LMS" />
+  <meta property="og:description" content="Katalog kursus dengan filter pintar." />
+  <meta property="og:image" content="images/02_home.jpg" />
+  <title>Kursus — EduKita-LMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="images/logo.png" alt="EduKita Logo" />
+        <span class="fw-bold">EduKita-LMS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.html" data-i18n="nav.courses">Kursus</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html" data-i18n="nav.blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Kontak</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-ek" href="login.html">Login</a></li>
+          <li class="nav-item ms-2"><a class="btn btn-outline-secondary" href="register.html">Register</a></li>
+          <li class="nav-item dropdown ms-2">
+            <a class="nav-link dropdown-toggle" href="#" id="lang" role="button" data-bs-toggle="dropdown" aria-expanded="false">ID</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-lang-switch="id">Indonesia</a></li>
+              <li><a class="dropdown-item" href="#" data-lang-switch="en">English</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-pale py-5">
+    <div class="container">
+      <h1 class="fw-bold">Katalog Kursus</h1>
+      <p class="text-muted mb-0">Temukan kursus terbaik sesuai kebutuhanmu</p>
+    </div>
+  </header>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="card shadow-sm mb-4" data-course-filters>
+        <div class="card-body">
+          <div class="row g-3 align-items-end">
+            <div class="col-md-4">
+              <label class="form-label">Cari</label>
+              <input type="search" class="form-control" placeholder="Cari kursus (mis. UI/UX)" />
+            </div>
+            <div class="col-md-4">
+              <label class="form-label">Kategori</label>
+              <select class="form-select" name="category">
+                <option value="">Semua Kategori</option>
+                <option value="Teknologi">Teknologi</option>
+                <option value="Desain">Desain</option>
+                <option value="Bisnis">Bisnis</option>
+                <option value="Bahasa">Bahasa</option>
+                <option value="Karier">Karier</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label class="form-label">Level</label>
+              <select class="form-select" name="level">
+                <option value="">Semua Level</option>
+                <option value="Pemula">Pemula</option>
+                <option value="Menengah">Menengah</option>
+                <option value="Lanjutan">Lanjutan</option>
+              </select>
+            </div>
+            <div class="col-md-1 d-grid">
+              <a href="#" class="btn btn-ek mt-3 mt-md-0" onclick="return false;">Filter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" data-course-list>
+        <!-- Repeatable course items -->
+        <div class="col-md-6 col-lg-4" data-course data-title="Dasar Pemrograman Web" data-category="Teknologi" data-level="Pemula">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-1.jpg" class="card-img-top" alt="Kelas 1">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Teknologi</span>
+                <span class="badge-level badge rounded-pill">Pemula</span>
+              </div>
+              <h5 class="card-title">Dasar Pemrograman Web</h5>
+              <div class="small text-muted mb-2">12 jam • 45 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp149.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-course data-title="UI/UX Design untuk Aplikasi" data-category="Desain" data-level="Menengah">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-2.jpg" class="card-img-top" alt="Kelas 2">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Desain</span>
+                <span class="badge-level badge rounded-pill">Menengah</span>
+              </div>
+              <h5 class="card-title">UI/UX Design untuk Aplikasi</h5>
+              <div class="small text-muted mb-2">10 jam • 30 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp199.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-course data-title="Dasar Digital Marketing" data-category="Bisnis" data-level="Pemula">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-3.jpg" class="card-img-top" alt="Kelas 3">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Bisnis</span>
+                <span class="badge-level badge rounded-pill">Pemula</span>
+              </div>
+              <h5 class="card-title">Dasar Digital Marketing</h5>
+              <div class="small text-muted mb-2">8 jam • 24 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp179.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-course data-title="Bahasa Inggris Komunikatif" data-category="Bahasa" data-level="Menengah">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-4.jpg" class="card-img-top" alt="Kelas 4">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Bahasa</span>
+                <span class="badge-level badge rounded-pill">Menengah</span>
+              </div>
+              <h5 class="card-title">Bahasa Inggris Komunikatif</h5>
+              <div class="small text-muted mb-2">15 jam • 50 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp129.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-course data-title="Persiapan Wawancara Kerja" data-category="Karier" data-level="Pemula">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-5.jpg" class="card-img-top" alt="Kelas 5">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Karier</span>
+                <span class="badge-level badge rounded-pill">Pemula</span>
+              </div>
+              <h5 class="card-title">Persiapan Wawancara Kerja</h5>
+              <div class="small text-muted mb-2">5 jam • 12 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp99.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-course data-title="Data Analysis dengan Excel" data-category="Teknologi" data-level="Lanjutan">
+          <div class="card course-card h-100">
+            <img src="images/sample-courses/course-6.jpg" class="card-img-top" alt="Kelas 6">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="badge">Teknologi</span>
+                <span class="badge-level badge rounded-pill">Lanjutan</span>
+              </div>
+              <h5 class="card-title">Data Analysis dengan Excel</h5>
+              <div class="small text-muted mb-2">20 jam • 70 video</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="price">Rp149.000</span>
+                <a href="course-detail.html" class="btn btn-sm btn-ek">Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center text-muted mt-4" data-empty style="display:none">Tidak ada kursus yang sesuai.</div>
+    </div>
+  </section>
+
+  <footer class="footer pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="images/logo.png" alt="logo" height="32" />
+            <strong>EduKita-LMS</strong>
+          </div>
+          <p class="small">Platform kursus online untuk talenta Indonesia. Belajar keterampilan digital, bisnis, dan bahasa.</p>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-uppercase small">Produk</h6>
+          <ul class="list-unstyled small">
+            <li><a href="course.html">Kursus</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3">
+          <h6 class="text-uppercase small">Dukungan</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#">Dokumentasi</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="text-uppercase small">Ikuti Kami</h6>
+          <div class="d-flex gap-3">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-light mt-4 pt-3 small">© <span id="y"></span> EduKita-LMS. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

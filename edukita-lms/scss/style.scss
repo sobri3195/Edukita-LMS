@@ -1,0 +1,16 @@
+// EduKita-LMS SCSS source
+$ek-primary: #2B7A78;
+$ek-pale: #DEF2F1;
+$ek-accent: #FF8C42;
+$ek-dark: #0B1B1A;
+$ek-muted: #6c757d;
+
+:root{
+  --ek-primary:#{$ek-primary};
+  --ek-pale:#{$ek-pale};
+  --ek-accent:#{$ek-accent};
+  --ek-dark:#{$ek-dark};
+  --ek-muted:#{$ek-muted};
+}
+
+// Add your SCSS partials here and compile into css/style.css
