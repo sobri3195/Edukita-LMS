@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduKita-LMS Documentation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;}
+    code{background:#f6f8fa;padding:.15rem .35rem;border-radius:.25rem}
+    pre{background:#0b1520;color:#d2e3f5;border-radius:.5rem;padding:1rem}
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <div class="mb-4">
+      <h1 class="h3 mb-1">EduKita-LMS</h1>
+      <div class="text-secondary">HTML5 Responsive LMS Template</div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="h5">1. Panduan Instalasi</h2>
+        <ol>
+          <li>Ekstrak paket <strong>edukita-lms</strong> ke folder server/hosting Anda.</li>
+          <li>Pastikan koneksi internet tersedia untuk CDN (Bootstrap, Font Awesome, AOS). Jika ingin offline, unduh aset lokal dan perbarui path.</li>
+          <li>Buka <code>index.html</code> di browser untuk melihat halaman utama.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="h5">2. Struktur Folder</h2>
+        <pre><code>edukita-lms/
+├── index.html
+├── course.html
+├── course-detail.html
+├── about.html
+├── blog.html
+├── blog-detail.html
+├── contact.html
+├── login.html
+├── register.html
+├── dashboard-student.html
+├── dashboard-teacher.html
+├── css/
+│   └── style.css
+├── scss/
+│   └── style.scss
+├── js/
+│   └── main.js
+├── images/
+│   ├── hero.jpg
+│   ├── logo.png
+│   ├── payment/
+│   │   ├── ovo.png
+│   │   ├── gopay.png
+│   │   └── bank.png
+│   ├── sample-courses/
+│   │   ├── course-1.jpg
+│   │   └── ...
+│   └── preview/
+│       ├── thumbnail.png (80x80)
+│       ├── 01_edukita-preview.jpg (590x300)
+│       ├── 02_home.jpg
+│       ├── 03_course.jpg
+│       └── 04_dashboard.jpg
+└── documentation/
+    └── index.html</code></pre>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="h5">3. Petunjuk Kustomisasi</h2>
+        <ul>
+          <li>Warna & gaya: Ubah variabel CSS di <code>css/style.css</code> atau edit sumber SCSS di <code>scss/style.scss</code>.</li>
+          <li>Font: Template menggunakan Google Fonts (Poppins & Open Sans) di <code>css/style.css</code>.</li>
+          <li>Komponen: Sesuaikan section pada file HTML terkait (landing, course, blog, dashboard).</li>
+          <li>Animasi: AOS dapat diaktifkan/diatur di <code>index.html</code> (lihat <code>AOS.init</code>).</li>
+          <li>Form: Form sudah <em>AJAX-ready</em> untuk demo. Ganti logika di <code>js/main.js</code> dengan endpoint backend Anda.</li>
+          <li>Multi-bahasa: Contoh switcher ada di navbar. Tambahkan entri <code>translations</code> di <code>js/main.js</code> sesuai kebutuhan.</li>
+          <li>SEO: Perbarui meta <code>title</code>, <code>description</code>, <code>keywords</code>, dan <code>og:image</code> setiap halaman.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h2 class="h5">4. Lisensi & Kredit Aset</h2>
+        <ul>
+          <li>Framework UI: <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap 5</a> (MIT)</li>
+          <li>Ikon: <a href="https://fontawesome.com/" target="_blank" rel="noreferrer">Font Awesome</a> (Free)</li>
+          <li>Font: <a href="https://fonts.google.com/" target="_blank" rel="noreferrer">Google Fonts</a> (Poppins, Open Sans)</li>
+          <li>Gambar contoh/preview: Silakan ganti dengan gambar dari Unsplash/Pexels (bebas pakai komersial). Saat ini menggunakan placeholder.</li>
+        </ul>
+        <p class="mb-0 small text-secondary">Catatan: Pastikan mengganti gambar placeholder sebelum rilis ke marketplace.</p>
+      </div>
+    </div>
+
+    <div class="text-center text-secondary small">© EduKita-LMS. Documentation v1.0</div>
+  </div>
+</body>
+</html>

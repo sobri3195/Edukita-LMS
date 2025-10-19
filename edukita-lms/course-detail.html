@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Kursus</title>
+  <meta name="description" content="Detail kursus: deskripsi, video preview, durasi, harga, dan tombol daftar sekarang di EduKita-LMS.">
+  <meta name="keywords" content="detail kursus, daftar kursus, lms indonesia">
+  <meta property="og:image" content="images/preview/03_course.jpg">
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/logo.png" alt="EduKita logo"><strong>EduKita-LMS</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.html">Kursus</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-primary" href="register.html">Gabung</a></li>
+          <li class="nav-item ms-lg-2">
+            <select class="lang-switch form-select form-select-sm" id="langSwitch" aria-label="Language switch">
+              <option value="id">ID</option>
+              <option value="en">EN</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-primary-soft">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="mb-2">Fundamental HTML & CSS</h1>
+          <p class="text-secondary">Pelajari dasar pembuatan website modern dengan HTML5 & CSS3.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <span><i class="fa-regular fa-clock me-1"></i> Durasi: 10 jam</span>
+            <span><i class="fa-solid fa-signal me-1"></i> Level: Pemula</span>
+            <span><i class="fa-regular fa-file-lines me-1"></i> 20 Materi</span>
+          </div>
+        </div>
+        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+          <div class="h4 mb-2 text-primary">Rp129.000</div>
+          <a class="btn btn-primary btn-lg scroll-to-payment">Daftar Sekarang</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8">
+          <div class="ratio ratio-16x9 rounded-3 shadow-soft">
+            <div class="d-flex align-items-center justify-content-center flex-column bg-primary-soft">
+              <i class="fa-regular fa-circle-play fa-3x text-primary mb-2"></i>
+              <div class="fw-semibold">Video Preview</div>
+              <small class="text-muted">Tambahkan embed YouTube/Vimeo di sini.</small>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h4>Deskripsi</h4>
+            <p>Kursus ini membahas struktur HTML5, styling dengan CSS3, Flexbox, dan responsivitas dasar. Cocok untuk pemula yang ingin membangun website profesional.</p>
+            <h5 class="mt-4">Apa yang akan Anda pelajari</h5>
+            <ul>
+              <li>Struktur dokumen HTML5 dan semantic tags</li>
+              <li>Dasar CSS3, layout, dan tipografi</li>
+              <li>Responsive design dengan Flexbox & Grid</li>
+              <li>Praktik terbaik aksesibilitas dan SEO dasar</li>
+            </ul>
+            <h5 class="mt-4">Silabus</h5>
+            <ol>
+              <li>Pengenalan HTML5</li>
+              <li>CSS Dasar & Selektor</li>
+              <li>Box Model & Layout</li>
+              <li>Flexbox, Grid, & Responsivitas</li>
+              <li>Mini Project: Landing Page</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Detail</h5>
+              <ul class="list-unstyled small mb-0">
+                <li class="mb-2"><i class="fa-regular fa-circle-check text-success me-2"></i>Sertifikat penyelesaian</li>
+                <li class="mb-2"><i class="fa-regular fa-circle-check text-success me-2"></i>Akses seumur hidup</li>
+                <li class="mb-2"><i class="fa-regular fa-circle-check text-success me-2"></i>Akses di mobile & TV</li>
+                <li class="mb-2"><i class="fa-regular fa-circle-check text-success me-2"></i>Materi update berkala</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card mt-3" id="payment">
+            <div class="card-body">
+              <h5 class="card-title">Metode Pembayaran</h5>
+              <p class="small text-muted">Pilihan pembayaran lokal tersedia:</p>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="payment-btn" type="button"><img src="images/payment/ovo.png" alt="OVO">OVO</button>
+                <button class="payment-btn" type="button"><img src="images/payment/gopay.png" alt="GoPay">GoPay</button>
+                <button class="payment-btn" type="button"><img src="images/payment/bank.png" alt="Bank">Transfer Bank</button>
+              </div>
+              <div class="alert alert-info mt-3 mb-0">
+                Ini adalah placeholder. Integrasikan ke payment gateway (Midtrans/Xendit/dll) sesuai kebutuhan.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container small d-flex justify-content-between">
+      <span>© <span id="year"></span> EduKita-LMS</span>
+      <a href="documentation/index.html" class="text-decoration-underline">Dokumentasi</a>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
