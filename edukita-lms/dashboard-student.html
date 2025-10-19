@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dashboard Siswa — kursus aktif, progres, jadwal live, status kuis." />
+  <meta name="keywords" content="dashboard siswa, LMS" />
+  <meta property="og:title" content="Dashboard Siswa — EduKita-LMS" />
+  <meta property="og:image" content="images/04_dashboard.jpg" />
+  <title>Dashboard Siswa — EduKita-LMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-lg-3 col-xl-2 p-0 bg-white sidebar">
+        <div class="p-3 border-bottom d-flex align-items-center gap-2">
+          <img src="images/logo.png" alt="logo" height="28" />
+          <strong>EduKita-LMS</strong>
+        </div>
+        <nav class="nav flex-column p-3">
+          <a class="nav-link active" href="#"><i class="fa fa-gauge me-2"></i>Dashboard</a>
+          <a class="nav-link" href="#"><i class="fa fa-book me-2"></i>Kursus Saya</a>
+          <a class="nav-link" href="#"><i class="fa fa-video me-2"></i>Jadwal Live</a>
+          <a class="nav-link" href="#"><i class="fa fa-circle-question me-2"></i>Kuis</a>
+          <a class="nav-link" href="#"><i class="fa fa-award me-2"></i>Sertifikat</a>
+          <a class="nav-link" href="#"><i class="fa fa-gear me-2"></i>Pengaturan</a>
+          <a class="nav-link text-danger" href="#"><i class="fa fa-right-from-bracket me-2"></i>Logout</a>
+        </nav>
+      </aside>
+      <main class="col-lg-9 col-xl-10 p-4">
+        <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-4">
+          <h1 class="h4 m-0">Halo, Rina</h1>
+          <div class="d-flex align-items-center gap-2">
+            <a class="btn btn-outline-secondary btn-sm" href="course.html">Jelajahi Kursus</a>
+            <a class="btn btn-ek btn-sm" href="index.html">Beranda</a>
+          </div>
+        </div>
+
+        <div class="row g-3 mb-4">
+          <div class="col-md-4">
+            <div class="p-3 rounded border h-100">
+              <div class="text-muted small">Kursus Aktif</div>
+              <div class="h4 mb-0">3</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 rounded border h-100">
+              <div class="text-muted small">Progres Rata-rata</div>
+              <div class="progress mt-1"><div class="progress-bar" style="width:62%"></div></div>
+              <div class="small mt-1">62%</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 rounded border h-100">
+              <div class="text-muted small">Kuis Tuntas</div>
+              <div class="h4 mb-0">12</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-xl-7">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title">Kursus Aktif</h5>
+                <div class="d-flex flex-column gap-3">
+                  <div class="border rounded p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sample-courses/course-1.jpg" class="rounded" width="80" height="60" alt="course" />
+                      <div class="flex-grow-1">
+                        <div class="fw-semibold">Dasar Pemrograman Web</div>
+                        <div class="progress mt-1"><div class="progress-bar" style="width:40%"></div></div>
+                      </div>
+                      <a href="course-detail.html" class="btn btn-sm btn-outline-secondary">Lanjut</a>
+                    </div>
+                  </div>
+                  <div class="border rounded p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sample-courses/course-2.jpg" class="rounded" width="80" height="60" alt="course" />
+                      <div class="flex-grow-1">
+                        <div class="fw-semibold">UI/UX Design untuk Aplikasi</div>
+                        <div class="progress mt-1"><div class="progress-bar" style="width:75%"></div></div>
+                      </div>
+                      <a href="course-detail.html" class="btn btn-sm btn-outline-secondary">Lanjut</a>
+                    </div>
+                  </div>
+                  <div class="border rounded p-3">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="images/sample-courses/course-3.jpg" class="rounded" width="80" height="60" alt="course" />
+                      <div class="flex-grow-1">
+                        <div class="fw-semibold">Dasar Digital Marketing</div>
+                        <div class="progress mt-1"><div class="progress-bar" style="width:90%"></div></div>
+                      </div>
+                      <a href="course-detail.html" class="btn btn-sm btn-outline-secondary">Lanjut</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Jadwal Live</h5>
+                <table class="table align-middle mb-0">
+                  <tbody>
+                    <tr>
+                      <td>Senin, 10.00</td>
+                      <td>Bahasa Inggris Komunikatif</td>
+                      <td class="text-end"><span class="badge bg-success-subtle text-success">Aktif</span></td>
+                    </tr>
+                    <tr>
+                      <td>Rabu, 19.00</td>
+                      <td>Data Analysis dengan Excel</td>
+                      <td class="text-end"><span class="badge bg-warning-subtle text-warning">Besok</span></td>
+                    </tr>
+                    <tr>
+                      <td>Jumat, 13.00</td>
+                      <td>Dasar Pemrograman Web</td>
+                      <td class="text-end"><span class="badge bg-secondary-subtle text-secondary">Selesai</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Kuis Terbaru</h5>
+                <ul class="list-unstyled mb-0 small">
+                  <li class="py-2 border-bottom">HTML Dasar — <span class="text-success">90/100</span></li>
+                  <li class="py-2 border-bottom">Layout CSS — <span class="text-success">85/100</span></li>
+                  <li class="py-2">Pengantar JS — <span class="text-danger">60/100</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
